@@ -1,0 +1,269 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"FilterLink",
+				"FilterLinkComponent"
+			],
+			[
+				"c",
+				"component"
+			],
+			[
+				"inStockOnly",
+				"instockOnly"
+			],
+			[
+				"webpack",
+				"webpack-dev-server"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/E/web/react-router-tutorial/01-setting-up/modules/redux/.gitignore",
+			"settings":
+			{
+				"buffer_size": 23,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 400.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/repositories/react_redux_playground"
+	],
+	"file_history":
+	[
+		"/E/web/react-router-tutorial/01-setting-up/modules/redux/Link.component.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/redux/containers/VisibleTodoList.component.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/redux/Footer.component.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/redux/containers/FilterLink.component.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/redux/store/configureStore.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/redux/Todo.component.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/NavLink.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/App.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/filter_table/ProductCategoryRow.component.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/filter_table/ProductTable.component.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/filter_table/FilterTable.module.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/redux/Redux.module.js",
+		"/E/web/react-router-tutorial/01-setting-up/webpack.config.js",
+		"/E/web/react-router-tutorial/01-setting-up/.babelrc",
+		"/E/web/react-router-tutorial/01-setting-up/package.json",
+		"/E/web/react-router-tutorial/01-setting-up/index.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/Home.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/filter_table/SearchBar.component.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/filter_table/ProductRow.component.js",
+		"/E/web/react-router-tutorial/01-setting-up/modules/product_table/FilterTable.module.js",
+		"/E/web/react-router-tutorial/01-setting-up/public/index.html",
+		"/E/web/react-router-tutorial/01-setting-up/test/index.js",
+		"/E/web/react-router-tutorial/01-setting-up/public/bundle.js",
+		"/E/web/react-router-huge-apps-refactor-before/webpack.config.js",
+		"/E/web/react-router-huge-apps-refactor-before/server.js",
+		"/E/web/react-dynamic-route-loading-es6-master/package.json",
+		"/E/web/react-dynamic-route-loading-es6-master/webpack.config.js",
+		"/E/web/react-router-tutorial/lessons/01-setting-up/webpack.config.js",
+		"/E/web/react-router-tutorial/lessons/01-setting-up/index.html",
+		"/E/web/react-router-tutorial/lessons/01-setting-up/style.css",
+		"/E/web/react/build/vendor.js",
+		"/E/web/react/package.json",
+		"/E/web/react/.terbabelrc",
+		"/E/web/react/build/index.html",
+		"/E/web/react/build/bundle.js",
+		"/E/domains/react/src/main.js",
+		"/E/domains/react/build/bundle.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"VisibleTodoListComponent",
+			"pages/Home",
+			"Home",
+			"Repos"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/E/web/react-router-tutorial/01-setting-up/modules/redux/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "react_redux_playground.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
