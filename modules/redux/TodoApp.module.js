@@ -8,7 +8,7 @@ import FooterComponent from './Footer.component';
 import VisibleTodoListComponent from './containers/VisibleTodoList.component';
 import AddTodoComponent from './containers/AddTodo.component';
 
-import { showActive, showAll, showCompleted } from './actions/TodosActions';
+import { showActive, showAll, showCompleted } from './actions/FilterActions';
 
 class TodoAppModule extends React.Component {
 
@@ -43,7 +43,7 @@ class TodoAppModule extends React.Component {
 
 function mapStateToProps(state) {
 	return {
-		todos : state.todos
+		todos : state.initialTodos.todos
 	}
 }
 
