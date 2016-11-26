@@ -27,9 +27,9 @@ export default class TodoListComponent extends React.Component {
 		return (
 				<div>
 				<ul>{todos}</ul>
-				<button onClick={this.props.onTodoClick}>ShowActive</button>
-				<button onClick={this.props.onShowAll}>ShowAll</button>
-				<button onClick={this.props.onShowCompleted}>ShowCompleted</button>
+				<button onClick={this.props.onShowActive}>Show Active</button>
+				<button onClick={this.props.onShowAll}>Show All</button>
+				<button onClick={this.props.onShowCompleted}>Show Completed</button>
 </div>
 			)
 	}
@@ -41,5 +41,8 @@ TodoListComponent.propTypes = {
 		completed : PropTypes.bool.isRequired,
 		text : PropTypes.string.isRequired
 	}).isRequired).isRequired,
+	onShowActive : PropTypes.func.isRequired,
+	onShowAll : PropTypes.func.isRequired,
+	onShowCompleted : PropTypes.func.isRequired,
 	onTodoClick : PropTypes.func.isRequired
 }

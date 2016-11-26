@@ -28,9 +28,10 @@ class TodoAppModule extends React.Component {
 
 				<TodoListComponent 
 				todos={this.props.todos}
-				onTodoClick={this.props.showActive}
+				onShowActive={this.props.showActive}
 				onShowAll={this.props.showAll}
 				onShowCompleted={this.props.showCompleted}
+				onTodoClick={this.props.onTodoClick}
 				 />
 
 				 <FooterComponent />
@@ -42,8 +43,9 @@ class TodoAppModule extends React.Component {
 }
 
 function mapStateToProps(state) {
+	console.log(state);
 	return {
-		todos : state.initialTodos.todos
+		todos : state.todos.todos
 	}
 }
 
