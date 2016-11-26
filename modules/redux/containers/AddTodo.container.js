@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-export default class AddTodoComponent extends React.Component {
+export default class AddTodoContainer extends React.Component {
 
 	render() {
 		return ( 

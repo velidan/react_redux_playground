@@ -27,25 +27,55 @@
 			"file": "modules/redux/TodoApp.module.js",
 			"settings":
 			{
-				"buffer_size": 1326,
+				"buffer_size": 1393,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"file": "modules/redux/containers/VisibleTodoList.component.js",
 			"settings":
 			{
-				"buffer_size": 23,
+				"buffer_size": 161,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "modules/redux/components/Footer.component.js",
+			"settings":
+			{
+				"buffer_size": 528,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "modules/redux/store/configureStore.js",
+			"contents": "import React, { PropTypes } from 'react';\nimport TodoComponent from './Todo.component';\n\n\n\nexport default class TodoListComponent extends React.Component {\n\t\n\tconstructor(props) {\n\t\tsuper(props);\n\t}\n\n\t\n\trender () {\n\n\t\tlet todos  = [];\n\n\t\tthis.props.todos.forEach(todoItem => {\n\t\t\ttodos.push(\n\t\t\t\t\t<TodoComponent\n\t\t\t\t\t\tkey={todoItem.id} \n\t\t\t\t\t\tonClick={this.props.onTodoClick}\n\t\t\t\t\t\t{...todoItem} />\n\t\t\t\t)\n\t\t})\n\n\n\t\treturn (\n\t\t\t\t<div>\n\t\t\t\t<ul>{todos}</ul>\n\t\t\t\t{ /*<button onClick={this.props.onShowActive}>Show Active</button>\n\t\t\t\t<button onClick={this.props.onShowAll}>Show All</button>\n\t\t\t\t<button onClick={this.props.onShowCompleted}>Show Completed</button> */ }\n</div>\n\t\t\t)\n\t}\n}\n\nTodoListComponent.propTypes = {\n\ttodos : PropTypes.arrayOf(PropTypes.shape({\n\t\tid : PropTypes.number.isRequired,\n\t\tcompleted : PropTypes.bool.isRequired,\n\t\ttext : PropTypes.string.isRequired\n\t}).isRequired).isRequired,\n\tonShowActive : PropTypes.func.isRequired,\n\tonShowAll : PropTypes.func.isRequired,\n\tonShowCompleted : PropTypes.func.isRequired,\n\tonTodoClick : PropTypes.func.isRequired\n}",
+			"file": "modules/redux/TodoList.component.js",
+			"file_size": 1118,
+			"file_write_time": 131246416993167519,
 			"settings":
 			{
-				"buffer_size": 386,
+				"buffer_size": 1072,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "modules/redux/containers/FilterLink.component.js",
+			"settings":
+			{
+				"buffer_size": 565,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "modules/redux/actions/FilterActions.js",
+			"settings":
+			{
+				"buffer_size": 362,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -53,7 +83,7 @@
 			"file": "modules/redux/reducers/todos.js",
 			"settings":
 			{
-				"buffer_size": 606,
+				"buffer_size": 1027,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -62,25 +92,7 @@
 			"file": "modules/redux/reducers/index.js",
 			"settings":
 			{
-				"buffer_size": 267,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "modules/redux/reducers/initialTodos.js",
-			"settings":
-			{
-				"buffer_size": 694,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "modules/redux/reducers/visibilityFilter.js",
-			"settings":
-			{
-				"buffer_size": 208,
+				"buffer_size": 209,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -93,7 +105,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 242.0,
 		"last_filter": "insta",
 		"selected_items":
 		[
@@ -124,13 +136,23 @@
 	"expanded_folders":
 	[
 		"/E/repositories/react_redux_playground",
+		"/E/repositories/react_redux_playground/modules",
 		"/E/repositories/react_redux_playground/modules/redux",
 		"/E/repositories/react_redux_playground/modules/redux/actions",
-		"/E/repositories/react_redux_playground/modules/redux/reducers",
-		"/E/repositories/react_redux_playground/modules/redux/store"
+		"/E/repositories/react_redux_playground/modules/redux/components",
+		"/E/repositories/react_redux_playground/modules/redux/containers",
+		"/E/repositories/react_redux_playground/modules/redux/reducers"
 	],
 	"file_history":
 	[
+		"/E/repositories/react_redux_playground/modules/redux/components/Footer.component.js",
+		"/E/repositories/react_redux_playground/modules/redux/TodoApp.module.js",
+		"/E/repositories/react_redux_playground/.gitignore",
+		"/E/repositories/react_redux_playground/modules/redux/store/configureStore.js",
+		"/E/repositories/react_redux_playground/modules/redux/reducers/todos.js",
+		"/E/repositories/react_redux_playground/modules/redux/reducers/index.js",
+		"/E/repositories/react_redux_playground/modules/redux/reducers/visibilityFilter.js",
+		"/E/repositories/react_redux_playground/modules/redux/reducers/initialTodos.js",
 		"/E/repositories/react_redux_playground/modules/redux/actions/TodosActions.js",
 		"/E/web/react-router-tutorial/01-setting-up/modules/redux/.gitignore",
 		"/E/web/react-router-tutorial/01-setting-up/modules/redux/Link.component.js",
@@ -173,7 +195,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -188,6 +210,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"onTodoClick",
 			"VisibleTodoListComponent",
 			"pages/Home",
 			"Home",
@@ -209,7 +232,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -218,15 +241,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1326,
+						"buffer_size": 1393,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1012,
-								1012
+								919,
+								930
 							]
 						],
 						"settings":
@@ -235,7 +258,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -243,75 +266,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": ".gitignore",
-					"semi_transient": false,
+					"file": "modules/redux/containers/VisibleTodoList.component.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 23,
+						"buffer_size": 161,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23,
-								23
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "modules/redux/store/configureStore.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 386,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								204,
-								204
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "modules/redux/reducers/todos.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 606,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								356,
-								356
+								0,
+								0
 							]
 						],
 						"settings":
@@ -326,20 +293,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "modules/redux/reducers/index.js",
+					"buffer": 2,
+					"file": "modules/redux/components/Footer.component.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 267,
+						"buffer_size": 528,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								227,
-								239
+								484,
+								484
 							]
 						],
 						"settings":
@@ -351,53 +318,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "modules/redux/reducers/initialTodos.js",
+					"buffer": 3,
+					"file": "modules/redux/TodoList.component.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 694,
+						"buffer_size": 1072,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								312,
-								324
+								201,
+								201
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "modules/redux/reducers/visibilityFilter.js",
+					"buffer": 4,
+					"file": "modules/redux/containers/FilterLink.component.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 208,
+						"buffer_size": 565,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								208,
-								208
+								73,
+								73
 							]
 						],
 						"settings":
@@ -408,7 +375,93 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "modules/redux/actions/FilterActions.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "modules/redux/reducers/todos.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								656,
+								656
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "modules/redux/reducers/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				}
 			]

@@ -7,6 +7,7 @@ export default class TodoListComponent extends React.Component {
 	
 	constructor(props) {
 		super(props);
+		console.log(props);
 	}
 
 
@@ -27,9 +28,9 @@ export default class TodoListComponent extends React.Component {
 		return (
 				<div>
 				<ul>{todos}</ul>
-				<button onClick={this.props.onShowActive}>Show Active</button>
+				{ /*<button onClick={this.props.onShowActive}>Show Active</button>
 				<button onClick={this.props.onShowAll}>Show All</button>
-				<button onClick={this.props.onShowCompleted}>Show Completed</button>
+				<button onClick={this.props.onShowCompleted}>Show Completed</button> */ }
 </div>
 			)
 	}

@@ -3,10 +3,10 @@ import React, { PropTypes }  from 'react';
 import { bindActionCreators } from 'redux'; 
 import { connect } from 'react-redux'
 
-import TodoListComponent from './TodoList.component';
-import FooterComponent from './Footer.component';
-import VisibleTodoListComponent from './containers/VisibleTodoList.component';
-import AddTodoComponent from './containers/AddTodo.component';
+
+import FooterComponent from './components/Footer.component';
+import VisibleTodoListContainer from './containers/VisibleTodoList.container';
+import AddTodoContainer from './containers/AddTodo.container';
 
 import { showActive, showAll, showCompleted } from './actions/FilterActions';
 
@@ -14,7 +14,7 @@ class TodoAppModule extends React.Component {
 
 	constructor(props) {
 		super(props);
-		console.log(this.props);
+
 		this.onTodoClick = this.onTodoClick.bind(this);
 	}
 
@@ -26,15 +26,14 @@ class TodoAppModule extends React.Component {
 		return (
 			<main>
 
-				<TodoListComponent 
+				<VisibleTodoListContainer 
 				todos={this.props.todos}
 				onShowActive={this.props.showActive}
 				onShowAll={this.props.showAll}
 				onShowCompleted={this.props.showCompleted}
-				onTodoClick={this.props.onTodoClick}
 				 />
 
-				 <FooterComponent />
+				 <VisibleTodoListContainer />
 		
 
 			</main>
