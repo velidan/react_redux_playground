@@ -14,6 +14,7 @@ class TodoAppModule extends React.Component {
 	render() {
 		return (
 			<main>
+				<AddTodoContainer />
 
 				<VisibleTodoListContainer />
 				<FooterComponent />
