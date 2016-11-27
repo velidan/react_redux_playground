@@ -1,5 +1,4 @@
-const initialState = { 
-	todos : [
+const initialState =  [
 			  {
 			    id : 0,
 			    text : "TODO 1",
@@ -17,7 +16,7 @@ const initialState = {
 			  }
 			]
 
-		  }
+
 
 
 const todo = (state, action) => {
@@ -30,6 +29,7 @@ const todo = (state, action) => {
 				completed: false
 			}
 		case "TOGGLE_TODO": 
+
 		      if (state.id !== action.id) {
 		        return state
 		      }
@@ -52,9 +52,7 @@ const todos = (state = initialState, action) => {
 		        todo(undefined, action)
 		      ]
 		case "TOGGLE_TODO":
-	      	return state.map(t =>
-		        todo(t, action)
-	      	)
+	      	return state.map(t => todo(t, action));
 
 		default:
 			return state;
