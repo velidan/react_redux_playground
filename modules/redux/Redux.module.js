@@ -7,6 +7,7 @@ import configureStore from './store/configureStore';
 import TodoAppModule from './TodoApp.module';
 
 let store = configureStore();
+console.log(store, store.getState());
 
 export default class ReduxModule extends React.Component {
 

@@ -18,23 +18,7 @@ const PRODUCTS = [
   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
  
-const TODOS = [
-  {
-    id : 0,
-    text : "TODO 1",
-    completed : false
-  },
-    {
-    id : 1,
-    text : "TODO 2",
-    completed : true
-  },
-    {
-    id : 2,
-    text : "TODO 3",
-    completed : false
-  }
-]
+
 
 function errorLoading(err) {
  console.error('Dynamic page loading failed', err);
@@ -43,8 +27,6 @@ function errorLoading(err) {
 
 function loadRoute(cb) {
  return (module) => {
-console.log(module)
-console.log(cb);
  	cb(null, module.default)};
 }
 

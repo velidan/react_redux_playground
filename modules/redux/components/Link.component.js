@@ -14,7 +14,7 @@ export default class LinkComponent extends React.Component {
 						this.props.onClick()
 					}}
 					>
-						{this.children}
+						{this.props.children}
 					</a>
 			)
 	}

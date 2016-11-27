@@ -7,7 +7,6 @@ export default class TodoListComponent extends React.Component {
 	
 	constructor(props) {
 		super(props);
-		console.log(props);
 	}
 
 

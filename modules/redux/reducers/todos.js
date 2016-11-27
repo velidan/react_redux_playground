@@ -21,7 +21,6 @@ const initialState = {
 
 
 const todo = (state, action) => {
-	console.log(state, action);
 
 	switch (action.type) {
 		case "ADD_TODO":
@@ -44,7 +43,7 @@ const todo = (state, action) => {
 
 
 const todos = (state = initialState, action) => {
-	console.log(state, action);
+
 
 	switch (action.type) {
 		case "ADD_TODO":

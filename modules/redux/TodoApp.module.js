@@ -25,7 +25,7 @@ class TodoAppModule extends React.Component {
 			<main>
 
 				 <VisibleTodoListContainer />
-		
+				<FooterComponent />
 
 			</main>
 			)
