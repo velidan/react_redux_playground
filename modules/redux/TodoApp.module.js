@@ -8,8 +8,6 @@ import FooterComponent from './components/Footer.component';
 import VisibleTodoListContainer from './containers/VisibleTodoList.container';
 import AddTodoContainer from './containers/AddTodo.container';
 
-import { showActive, showAll, showCompleted } from './actions/FilterActions';
-
 class TodoAppModule extends React.Component {
 
 	constructor(props) {
@@ -26,13 +24,6 @@ class TodoAppModule extends React.Component {
 		return (
 			<main>
 
-				<VisibleTodoListContainer 
-				todos={this.props.todos}
-				onShowActive={this.props.showActive}
-				onShowAll={this.props.showAll}
-				onShowCompleted={this.props.showCompleted}
-				 />
-
 				 <VisibleTodoListContainer />
 		
 
@@ -41,19 +32,19 @@ class TodoAppModule extends React.Component {
 	}
 }
 
-function mapStateToProps(state) {
-	console.log(state);
-	return {
-		todos : state.todos.todos
-	}
-}
+// function mapStateToProps(state) {
+// 	console.log(state);
+// 	return {
+// 		todos : state.todos.todos
+// 	}
+// }
 
-function mapDispatchToProps(dispatch) {
-	return {
-		showActive : bindActionCreators(showActive, dispatch),
-		showAll : bindActionCreators(showAll, dispatch),
-		showCompleted : bindActionCreators(showCompleted, dispatch),
-	}
-}
+// function mapDispatchToProps(dispatch) {
+// 	return {
+// 		showActive : bindActionCreators(showActive, dispatch),
+// 		showAll : bindActionCreators(showAll, dispatch),
+// 		showCompleted : bindActionCreators(showCompleted, dispatch),
+// 	}
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(TodoAppModule);
+export default TodoAppModule;

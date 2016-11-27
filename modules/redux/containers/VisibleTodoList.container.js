@@ -22,26 +22,6 @@ const getVisibleTodos = (todos, filter) => {
 }
 
 
-class VisibleTodoListContainer extends React.Component {
-
-	constructor(props) {
-		super(props);
-	}
-
-
-	render() {
-		return (
-			<TodoListComponent 
-				todos={this.props.todos}
-				onShowActive={this.props.showActive}
-				onShowAll={this.props.showAll}
-				onShowCompleted={this.props.showCompleted}
-				onTodoClick={this.props.onTodoClick}
-				 />
-			)
-	}
-}
-
 function mapStateToProps(state) {
 	console.log(state);
 	return {
@@ -51,11 +31,11 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
 	return {
-		showActive : bindActionCreators(showActive, dispatch),
-		showAll : bindActionCreators(showAll, dispatch),
-		showCompleted : bindActionCreators(showCompleted, dispatch),
+		onShowActive : bindActionCreators(showActive, dispatch),
+		onShowAll : bindActionCreators(showAll, dispatch),
+		onShowCompleted : bindActionCreators(showCompleted, dispatch),
 		onTodoClick : bindActionCreators(toggleTodo, dispatch)
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(VisibleTodoListContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(TodoListComponent);
